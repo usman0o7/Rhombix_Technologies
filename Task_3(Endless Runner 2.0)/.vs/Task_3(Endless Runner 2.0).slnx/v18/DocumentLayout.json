@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_3(endless runner 2.0)\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_3(endless runner 2.0)\\assets\\scripts\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_3(endless runner 2.0)\\assets\\scripts\\groundlooper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\groundlooper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\CactusSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CactusSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_3(endless runner 2.0)\\assets\\scripts\\coinspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_3(endless runner 2.0)\\assets\\scripts\\moveleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\moveleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_3(endless runner 2.0)\\assets\\scripts\\mountain_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mountain_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerControl.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\PlayerControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\PlayerControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAwwEoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T10:58:02.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fireball.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\Fireball.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Fireball.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\Fireball.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Fireball.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T13:07:17.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mountain_Management.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\Mountain_Management.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mountain_Management.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\Mountain_Management.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mountain_Management.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T11:03:42.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MoveLeft.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\MoveLeft.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MoveLeft.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\MoveLeft.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MoveLeft.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T10:57:25.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GroundLooper.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\GroundLooper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GroundLooper.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\GroundLooper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GroundLooper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T10:57:58.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoinSpawner.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\CoinSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinSpawner.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\CoinSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CoinSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T10:57:55.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CactusSpawner.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\CactusSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CactusSpawner.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_3(Endless Runner 2.0)\\Assets\\Scripts\\CactusSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CactusSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T10:57:06.89Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
