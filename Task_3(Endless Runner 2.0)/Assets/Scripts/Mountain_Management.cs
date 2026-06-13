@@ -7,7 +7,6 @@ public class Mountain_Management : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log("Value of speed: in moveleft" + GroundLooper.globalspeed);
         transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
         if (transform.position.x < -20f)
         {

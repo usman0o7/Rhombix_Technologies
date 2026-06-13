@@ -7,7 +7,6 @@ public class GroundLooper : MonoBehaviour
 
     private void Update()
     {
-        //globalspeed = globalspeed + 0.01f * Time.deltaTime;
         transform.Translate(Vector2.left * globalspeed * Time.deltaTime);
         if (transform.position.x <= -width)
         {
