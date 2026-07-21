@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_4\\assets\\scripts\\coinspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_4\\assets\\scripts\\cactusspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cactusspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_4\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_4\\assets\\scripts\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_4\\assets\\scripts\\groundlooper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\groundlooper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_4\\assets\\scripts\\mountain_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mountain_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_4\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\game dev\\rhombix_technologies\\task_4\\assets\\scripts\\moveleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\moveleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerControl.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\PlayerControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\PlayerControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwNYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:59:15.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MoveLeft.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\MoveLeft.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MoveLeft.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\MoveLeft.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MoveLeft.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:59:15.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Mountain_Management.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\Mountain_Management.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mountain_Management.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\Mountain_Management.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mountain_Management.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:59:13.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GroundLooper.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\GroundLooper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GroundLooper.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\GroundLooper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GroundLooper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:59:08.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fireball.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\Fireball.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Fireball.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\Fireball.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Fireball.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:59:05.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T11:00:59.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CactusSpawner.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\CactusSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CactusSpawner.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\CactusSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CactusSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T11:01:30.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CoinSpawner.cs",
+              "DocumentMoniker": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\CoinSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinSpawner.cs",
+              "ToolTip": "D:\\Game dev\\Rhombix_Technologies\\Task_4\\Assets\\Scripts\\CoinSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CoinSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T09:58:46.382Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

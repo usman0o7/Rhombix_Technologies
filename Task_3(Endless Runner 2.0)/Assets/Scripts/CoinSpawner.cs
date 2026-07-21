@@ -1,17 +1,32 @@
+// CoinSpawner.cs
 using UnityEngine;
+using System.Collections;
 
 public class CoinSpawner : MonoBehaviour
 {
     public GameObject[] coin;
     public float Interval = 5f;
-    public AnimationClip coin_Rotate;
+
+    [Tooltip("Optional: adds +/- random seconds to the interval so spawns feel less predictable. Leave at 0 to keep the exact Interval.")]
+    public float randomVariation = 0f;
+
     private void Start()
     {
-        InvokeRepeating("spawn", 1f, Interval);
+        StartCoroutine(SpawnRoutine());
     }
 
-    void spawn()
+    private IEnumerator SpawnRoutine()
     {
-        Instantiate(coin[Random.Range(0, coin.Length)], transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(1f);
+        while (true)
+        {
+            if (GroundLooper.globalspeed > 0 && coin.Length > 0) // Stop spawning if game over
+            {
+                Instantiate(coin[Random.Range(0, coin.Length)], transform.position, Quaternion.identity);
+            }
+
+            float wait = Interval + Random.Range(-randomVariation, randomVariation);
+            yield return new WaitForSeconds(Mathf.Max(0.1f, wait));
+        }
     }
 }

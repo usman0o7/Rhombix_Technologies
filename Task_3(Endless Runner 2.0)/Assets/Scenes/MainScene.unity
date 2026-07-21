@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &55955774 stripped
 GameObject:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &59438873
 GameObject:
@@ -256,10 +256,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 15
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &149714804
 GameObject:
@@ -429,7 +429,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0288105
+      value: 1.0810003
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &240284633
 GameObject:
@@ -597,7 +597,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.13781
+      value: 14.19
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 305947006}
   - component: {fileID: 305947007}
   m_Layer: 6
-  m_Name: Ground (3)
+  m_Name: Ground 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -683,7 +683,7 @@ Transform:
   m_GameObject: {fileID: 305947004}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.8886, y: -2.4, z: 0}
+  m_LocalPosition: {x: 9, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -761,6 +761,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundLooper
   width: 10.5
+  increaseDifficultyOverTime: 0
+  maxSpeed: 15
+  speedIncreasePerSecond: 0.05
 --- !u!1 &334213014
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,7 +775,7 @@ GameObject:
   - component: {fileID: 334213015}
   - component: {fileID: 334213016}
   m_Layer: 0
-  m_Name: Sky (3)
+  m_Name: Sky 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,7 +1073,7 @@ GameObject:
   - component: {fileID: 568077106}
   - component: {fileID: 568077105}
   m_Layer: 0
-  m_Name: Sky
+  m_Name: Sky 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1162,7 +1165,7 @@ GameObject:
   - component: {fileID: 606315410}
   - component: {fileID: 606315411}
   m_Layer: 6
-  m_Name: Ground
+  m_Name: Ground 0
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1177,7 +1180,7 @@ Transform:
   m_GameObject: {fileID: 606315408}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8886, y: -2.4, z: 0}
+  m_LocalPosition: {x: 0, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1255,6 +1258,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundLooper
   width: 10.5
+  increaseDifficultyOverTime: 0
+  maxSpeed: 15
+  speedIncreasePerSecond: 0.05
 --- !u!1 &658559751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,17 +1286,17 @@ Transform:
   m_GameObject: {fileID: 658559751}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.11697, y: -1.13465, z: 0}
+  m_LocalPosition: {x: 0, y: -0.2746501, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1348103029}
+  - {fileID: 1426524896}
+  - {fileID: 1143264042}
   - {fileID: 568077106}
   - {fileID: 334213015}
   - {fileID: 891350318}
   - {fileID: 2138031227}
-  - {fileID: 1143264042}
-  - {fileID: 1426524896}
-  - {fileID: 1348103029}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &767544896
@@ -1305,7 +1311,7 @@ GameObject:
   - component: {fileID: 767544898}
   - component: {fileID: 767544899}
   m_Layer: 6
-  m_Name: Ground (6)
+  m_Name: Ground -3
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1320,7 +1326,7 @@ Transform:
   m_GameObject: {fileID: 767544896}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.1113997, y: -2.4, z: 0}
+  m_LocalPosition: {x: -9, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1398,6 +1404,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundLooper
   width: 10.5
+  increaseDifficultyOverTime: 0
+  maxSpeed: 15
+  speedIncreasePerSecond: 0.05
 --- !u!1 &814432790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,7 +1508,7 @@ Transform:
   m_GameObject: {fileID: 848979049}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 0.5, z: 0}
+  m_LocalPosition: {x: 11, y: 1.3599999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1520,7 +1529,7 @@ MonoBehaviour:
   coin:
   - {fileID: 4055256890646305870, guid: 72da182fec2c7bf4888d66993e9b1064, type: 3}
   Interval: 2
-  coin_Rotate: {fileID: 0}
+  randomVariation: 0
 --- !u!1 &869814554 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9069122918131049742, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
@@ -1543,7 +1552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &891350317
 GameObject:
@@ -1556,7 +1565,7 @@ GameObject:
   - component: {fileID: 891350318}
   - component: {fileID: 891350319}
   m_Layer: 0
-  m_Name: Sky (4)
+  m_Name: Sky 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1785,7 +1794,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.16781
+      value: 19.220001
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1887,7 +1896,7 @@ GameObject:
   - component: {fileID: 1064962161}
   - component: {fileID: 1064962162}
   m_Layer: 6
-  m_Name: Ground (1)
+  m_Name: Ground 1
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1902,7 +1911,7 @@ Transform:
   m_GameObject: {fileID: 1064962159}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8886003, y: -2.4, z: 0}
+  m_LocalPosition: {x: 3, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1980,6 +1989,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundLooper
   width: 10.5
+  increaseDifficultyOverTime: 0
+  maxSpeed: 15
+  speedIncreasePerSecond: 0.05
 --- !u!1 &1072019014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,14 +2018,14 @@ Transform:
   m_GameObject: {fileID: 1072019014}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: -2.6, z: 0}
+  m_LocalPosition: {x: 0, y: -1.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 606315409}
-  - {fileID: 1266017250}
-  - {fileID: 1551465739}
   - {fileID: 767544897}
+  - {fileID: 1551465739}
+  - {fileID: 1266017250}
+  - {fileID: 606315409}
   - {fileID: 1064962160}
   - {fileID: 1374211707}
   - {fileID: 305947005}
@@ -2053,7 +2065,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.88, y: -0.905}
+  m_Offset: {x: 0, y: -0.905}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2076,7 +2088,7 @@ GameObject:
   - component: {fileID: 1143264042}
   - component: {fileID: 1143264043}
   m_Layer: 0
-  m_Name: Sky (6)
+  m_Name: Sky -1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2091,7 +2103,7 @@ Transform:
   m_GameObject: {fileID: 1143264041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.038, y: -0.865, z: 0}
+  m_LocalPosition: {x: -3, y: -0.865, z: 0}
   m_LocalScale: {x: 1.0421175, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2291,7 +2303,7 @@ Transform:
   m_GameObject: {fileID: 1192388128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2, y: -0.64, z: 0}
+  m_LocalPosition: {x: -1.1478102, y: 0.21999991, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2314,7 +2326,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 3.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2324,7 +2336,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1192388133
 MonoBehaviour:
@@ -2338,7 +2350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d10532e3185b1498ff2fad73a77fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
-  JumpForce: 10
+  JumpForce: 14
+  fallMultiplier: 3
   groundlayer:
     serializedVersion: 2
     m_Bits: 64
@@ -2353,7 +2366,7 @@ MonoBehaviour:
   - {fileID: 240284635}
   - {fileID: 1461470984}
   ammoRegenInterval: 8
-  Player_Die: {fileID: 7400000, guid: 789cc6853ff439c4280265e9c39da206, type: 2}
+  deadBoolName: IsDead
   ScoreText: {fileID: 893232233}
   Restart_Button: {fileID: 341153607}
 --- !u!95 &1192388134
@@ -2388,7 +2401,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.1278105
+      value: 8.18
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2459,7 +2472,7 @@ GameObject:
   - component: {fileID: 1266017251}
   - component: {fileID: 1266017252}
   m_Layer: 6
-  m_Name: Ground (4)
+  m_Name: Ground -1
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2474,7 +2487,7 @@ Transform:
   m_GameObject: {fileID: 1266017249}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.11139989, y: -2.4, z: 0}
+  m_LocalPosition: {x: -3, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2552,6 +2565,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundLooper
   width: 10.5
+  increaseDifficultyOverTime: 0
+  maxSpeed: 15
+  speedIncreasePerSecond: 0.05
 --- !u!1 &1326687488 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9069122918131049742, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
@@ -2574,7 +2590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &1348103028
 GameObject:
@@ -2587,7 +2603,7 @@ GameObject:
   - component: {fileID: 1348103029}
   - component: {fileID: 1348103030}
   m_Layer: 0
-  m_Name: Sky (2)
+  m_Name: Sky -3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2602,7 +2618,7 @@ Transform:
   m_GameObject: {fileID: 1348103028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.888, y: -0.865, z: 0}
+  m_LocalPosition: {x: -9, y: -0.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2679,7 +2695,7 @@ GameObject:
   - component: {fileID: 1374211708}
   - component: {fileID: 1374211709}
   m_Layer: 6
-  m_Name: Ground (2)
+  m_Name: Ground 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2694,7 +2710,7 @@ Transform:
   m_GameObject: {fileID: 1374211706}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.8886, y: -2.4, z: 0}
+  m_LocalPosition: {x: 6, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2772,6 +2788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundLooper
   width: 10.5
+  increaseDifficultyOverTime: 0
+  maxSpeed: 15
+  speedIncreasePerSecond: 0.05
 --- !u!1 &1426524895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2802,7 @@ GameObject:
   - component: {fileID: 1426524896}
   - component: {fileID: 1426524897}
   m_Layer: 0
-  m_Name: Sky (1)
+  m_Name: Sky -2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2798,7 +2817,7 @@ Transform:
   m_GameObject: {fileID: 1426524895}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -0.865, z: 0}
+  m_LocalPosition: {x: -6, y: -0.865, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2964,7 +2983,7 @@ Transform:
   m_GameObject: {fileID: 1471460219}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: -2, z: 0}
+  m_LocalPosition: {x: 11, y: -1.1400001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2987,6 +3006,7 @@ MonoBehaviour:
   - {fileID: 3592387109810347611, guid: 1bb41017be5cecf41977ad798a6638c5, type: 3}
   - {fileID: 2079495709317101037, guid: de6f1280d23c2864daef575bf7062580, type: 3}
   Interval: 2
+  randomVariation: 0
 --- !u!1 &1481349258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9069122918131049742, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
@@ -3009,7 +3029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &1549005956
 GameObject:
@@ -3098,7 +3118,7 @@ GameObject:
   - component: {fileID: 1551465740}
   - component: {fileID: 1551465741}
   m_Layer: 6
-  m_Name: Ground (5)
+  m_Name: Ground -2
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3113,7 +3133,7 @@ Transform:
   m_GameObject: {fileID: 1551465738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1114, y: -2.4, z: 0}
+  m_LocalPosition: {x: -6, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3191,6 +3211,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundLooper
   width: 10.5
+  increaseDifficultyOverTime: 0
+  maxSpeed: 15
+  speedIncreasePerSecond: 0.05
 --- !u!1 &1563564564 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9069122918131049742, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
@@ -3213,7 +3236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &1589625944 stripped
 GameObject:
@@ -3237,7 +3260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1001 &1595626569
 PrefabInstance:
@@ -3249,7 +3272,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.057811
+      value: 10.110001
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3318,7 +3341,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.21781
+      value: 17.27
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3387,7 +3410,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.3378105
+      value: 12.39
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3456,7 +3479,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.15781
+      value: 4.21
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3590,7 +3613,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.27781
+      value: 2.33
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3659,7 +3682,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.3278103
+      value: 6.38
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3728,7 +3751,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.74781
+      value: 15.8
       objectReference: {fileID: 0}
     - target: {fileID: 6343728170039036768, guid: 4536111362c6ee646b9537e269f2f58f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3860,7 +3883,7 @@ Transform:
   m_GameObject: {fileID: 2001604373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.052189827, y: 0.8599999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3952,7 +3975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &2106563833 stripped
 GameObject:
@@ -3976,7 +3999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e162783e8c0454b9da88bc4cc3d262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mountain_Management
-  speed: 0.5
+  parallaxFactor: 0.1
   width: 10.5
 --- !u!1 &2135240999
 GameObject:
@@ -4003,7 +4026,7 @@ Transform:
   m_GameObject: {fileID: 2135240999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.03781, y: -1.56124, z: 0}
+  m_LocalPosition: {x: -10.03781, y: -0.70124006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4031,7 +4054,7 @@ GameObject:
   - component: {fileID: 2138031227}
   - component: {fileID: 2138031228}
   m_Layer: 0
-  m_Name: Sky (5)
+  m_Name: Sky 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

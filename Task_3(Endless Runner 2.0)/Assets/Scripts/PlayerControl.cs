@@ -2,11 +2,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
     [Header("Movement Settings")]
-    public float JumpForce = 10f;
+    public float JumpForce = 12f;
+    public float fallMultiplier = 2.5f; // extra gravity once falling, so landing is quick
     public LayerMask groundlayer;
     public Transform groundcheck;
 
@@ -26,7 +28,7 @@ public class PlayerControl : MonoBehaviour
     private float ammoTimer = 0f;
 
     [Header("Game State UI & Animation")]
-    public AnimationClip Player_Die;
+    public string deadBoolName = "IsDead";
     private int Score = 0;
     public TextMeshProUGUI ScoreText;
     public GameObject Restart_Button;
@@ -38,13 +40,13 @@ public class PlayerControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        Restart_Button.SetActive(false);
 
-        // Initialize health pool and heart UI display state
+        if (Restart_Button != null)
+            Restart_Button.SetActive(false);
+
         currentHealth = maxHealth;
         UpdateHealthUI();
 
-        // Initialize weapon inventory ammo display state
         currentAmmo = maxAmmo;
         UpdateAmmoUI();
 
@@ -53,23 +55,31 @@ public class PlayerControl : MonoBehaviour
 
     public void Update()
     {
-        // <--- JUMPING MECHANIM --->
+        // Ground Check
         bool isGrounded = Physics2D.OverlapCircle(groundcheck.position, 0.2f, groundlayer);
         animator.SetBool("IsGrounded", isGrounded);
 
+        // Jump Input - only works while grounded, so there's no double/air jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = Vector2.up * JumpForce;
         }
-        
 
-        // <--- Left Mouse Button Shoot --->
+        // Once the player starts falling, add extra gravity so they come back down
+        // to the ground quickly instead of floating. This is the only gravity
+        // change we apply - jump height always stays the same (no short jump).
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+
+        // Combat Input
         if (Input.GetMouseButtonDown(0) && currentAmmo > 0)
         {
             ShootFireball();
         }
 
-        // <--- AMMO RELOAD COOLDOWN --->
+        // Passive Ammo Regen
         if (currentAmmo < maxAmmo)
         {
             ammoTimer += Time.deltaTime;
@@ -97,14 +107,7 @@ public class PlayerControl : MonoBehaviour
     {
         for (int i = 0; i < ammoImages.Length; i++)
         {
-            if (i < currentAmmo)
-            {
-                ammoImages[i].enabled = true;
-            }
-            else
-            {
-                ammoImages[i].enabled = false;
-            }
+            ammoImages[i].enabled = (i < currentAmmo);
         }
     }
 
@@ -132,27 +135,28 @@ public class PlayerControl : MonoBehaviour
     {
         for (int i = 0; i < heartImages.Length; i++)
         {
-            if (i < currentHealth)
-            {
-                heartImages[i].enabled = true;
-            }
-            else
-            {
-                heartImages[i].enabled = false;
-            }
+            heartImages[i].enabled = (i < currentHealth);
         }
     }
 
     void Die()
     {
-        animator.SetBool("IsDead", true);
+        animator.SetBool(deadBoolName, true);
         GroundLooper.globalspeed = 0f;
-        Time.timeScale = 0f;
+
+        // Delay freezing time slightly so the player death animation actually triggers
+        StartCoroutine(FreezeTimeDelayed(0.5f));
 
         if (Restart_Button != null)
         {
             Restart_Button.SetActive(true);
         }
+    }
+
+    private IEnumerator FreezeTimeDelayed(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+        Time.timeScale = 0f;
     }
 
     public void Restart_Game()
